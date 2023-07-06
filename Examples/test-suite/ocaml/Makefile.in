@@ -2,6 +2,9 @@
 # Makefile for ocaml test-suite
 #######################################################################
 
+# Work around testcases failing if run in parallel.
+.NOTPARALLEL:
+
 LANGUAGE     = ocaml
 OCAMLP4WHERE =`$(COMPILETOOL) @CAMLP4@ -where`
 OCC          =$(COMPILETOOL) @OCAMLC@
