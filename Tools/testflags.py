@@ -48,7 +48,7 @@ def get_cxxflags(language, std, compiler):
     "javascript":"-Werror " + cxx_common + " -Wno-error=unused-function", # Until overload_rename is fixed for node
            "lua":"-Werror " + cxx_common,
       "mzscheme":"-Werror " + cxx_common,
-         "ocaml":"-Werror " + cxx_common,
+         "ocaml":"-Werror " + cxx_common + " -fpermissive -Wno-error=narrowing", # Needed for 4.08.1, not for 4.13.1
         "octave":"-Werror " + cxx_common,
          "perl5":"-Werror " + cxx_common,
            "php":"-Werror " + cxx_common,
