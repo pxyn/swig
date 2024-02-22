@@ -34,6 +34,10 @@ jobs:
         include:
         - SWIGLANG: ocaml
           CPPSTD: c++17
+          os: ubuntu-20.04
+          VER: 4.08.1-stockgcc # Documentary only
+        - SWIGLANG: ocaml
+          CPPSTD: c++17
           GCC: 13
           os: ubuntu-20.04
           VER: 4.08.1 # Documentary only
