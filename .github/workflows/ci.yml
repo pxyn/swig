@@ -33,11 +33,22 @@ jobs:
       matrix:
         include:
         - SWIGLANG: ocaml
-          CSTD: c11 # ocaml 4.08.1 requires old C semantics for prototypes without parameters.
           CPPSTD: c++17
           GCC: 13
           os: ubuntu-20.04
           VER: 4.08.1 # Documentary only
+        - SWIGLANG: ocaml
+          CSTD: c11 # ocaml 4.08.1 requires old C semantics for prototypes without parameters.
+          CPPSTD: c++17
+          GCC: 13
+          os: ubuntu-20.04
+          VER: 4.08.1-c11 # Documentary only
+        - SWIGLANG: ocaml
+          CSTD: c90 # ocaml 4.08.1 requires old C semantics for prototypes without parameters.
+          CPPSTD: c++17
+          GCC: 13
+          os: ubuntu-20.04
+          VER: 4.08.1-c90 # Documentary only
         - SWIGLANG: ocaml
           CPPSTD: c++17
           GCC: 13
