@@ -33,13 +33,10 @@ jobs:
       matrix:
         include:
         - SWIGLANG: ocaml
-          os: ubuntu-20.04
-          VER: 4.08.1 # Documentary only
-#        - SWIGLANG: ocaml
-#          CPPSTD: c++17
-#          GCC: 13
-#          os: ubuntu-22.04
-#          VER: 4.13.1 # Documentary only
+          CPPSTD: c++17
+          GCC: 13
+          os: ubuntu-22.04
+          VER: 4.13.1 # Documentary only
       # Run all of them, as opposed to aborting when one fails
       fail-fast: false
 
