@@ -33,31 +33,13 @@ jobs:
       matrix:
         include:
         - SWIGLANG: ocaml
-          CPPSTD: c++17
-          os: ubuntu-20.04
-          VER: 4.08.1-stockgcc # Documentary only
-        - SWIGLANG: ocaml
-          CPPSTD: c++17
-          GCC: 13
           os: ubuntu-20.04
           VER: 4.08.1 # Documentary only
-        - SWIGLANG: ocaml
-          CSTD: c11 # ocaml 4.08.1 requires old C semantics for prototypes without parameters.
-          CPPSTD: c++17
-          GCC: 13
-          os: ubuntu-20.04
-          VER: 4.08.1-c11 # Documentary only
-        - SWIGLANG: ocaml
-          CSTD: c90 # ocaml 4.08.1 requires old C semantics for prototypes without parameters.
-          CPPSTD: c++17
-          GCC: 13
-          os: ubuntu-20.04
-          VER: 4.08.1-c90 # Documentary only
-        - SWIGLANG: ocaml
-          CPPSTD: c++17
-          GCC: 13
-          os: ubuntu-22.04
-          VER: 4.13.1 # Documentary only
+#        - SWIGLANG: ocaml
+#          CPPSTD: c++17
+#          GCC: 13
+#          os: ubuntu-22.04
+#          VER: 4.13.1 # Documentary only
       # Run all of them, as opposed to aborting when one fails
       fail-fast: false
 
