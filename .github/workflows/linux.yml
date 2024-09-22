@@ -34,7 +34,7 @@ jobs:
         include:
         - SWIGLANG: ruby
           CPPSTD: c++11
-          VER: '3.3'
+          VER: '3.3.4'
       # Run all of them, as opposed to aborting when one fails
       fail-fast: false
 
